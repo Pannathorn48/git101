@@ -11,6 +11,7 @@ void stringcat(char src[], char dest[])
     }
     *dest_p = 0;
 }
+
 int main()
 {
     char in1[100], in2[100];
