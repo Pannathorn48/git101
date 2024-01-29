@@ -11,6 +11,7 @@ int main()
     node *head = NULL;
     node *newnode = NULL;
     node *tmp = NULL;
+    node x;
 
     for (int i = 0; i < 10; i++)
     {
