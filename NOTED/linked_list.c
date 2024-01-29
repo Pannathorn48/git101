@@ -12,23 +12,16 @@ int main()
     node *newnode = NULL;
     node *tmp = NULL;
 
-    newnode = (node *)malloc(sizeof(node));
-    newnode->data = 1;
-    newnode->next = head;
-    head = newnode;
-
-    newnode = (node *)malloc(sizeof(node));
-    newnode->data = 2;
-    newnode->next = head;
-    head = newnode;
-
-    newnode = (node *)malloc(sizeof(node));
-    newnode->data = 3;
-    newnode->next = head;
-    head = newnode;
+    for (int i = 0; i < 10; i++)
+    {
+        newnode = (node *)malloc(sizeof(node));
+        newnode->data = i;
+        newnode->next = head;
+        head = newnode;
+    }
 
     for (tmp = head; tmp != NULL; tmp = tmp->next)
     {
-        printf("%d ", tmp->data);
+        printf("%d ", tmp->data, tmp);
     }
 }
