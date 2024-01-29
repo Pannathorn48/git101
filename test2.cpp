@@ -2,5 +2,5 @@
 using namespace std;
 int main()
 {
-    cout << "Hello git fuck" << endl;
+    cout << "Hello git fuck hate sub" << endl;
 }
